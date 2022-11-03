@@ -1,0 +1,267 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1144,4868" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="628,4803" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable2" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Program Manager" sap:VirtualizedContainerService.HintSize="586,740" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1423e545-3441-4f5d-a767-db60fa2b6b30" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Right-click 'Google Chrome'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="1423e545-3441-4f5d-a767-db60fa2b6b30" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="214, 369, 76, 85" FriendlyName="'Google Chrome'" FullSelectorArgument="&lt;wnd cls='SysListView32' title='FolderView' /&gt;&lt;ctrl name='Masaüstü' role='list' /&gt;&lt;ctrl name='Google Chrome' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SysListView32' title='FolderView' /&gt;&lt;ctrl name='Masaüstü' role='list' /&gt;&lt;ctrl name='Google Chrome' role='list item' automationid='' check:text='Google Chrome' /&gt;" Guid="74facd6c-0abd-408f-afcb-bf81becc61b1" ImageBase64="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" InformativeScreenshot="6c52b4d558f3acc29a45ead8290c11b5.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Aç'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1423e545-3441-4f5d-a767-db60fa2b6b30" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="3, 3, 331, 22" FriendlyName="'Aç'" FullSelectorArgument="&lt;ctrl name='Bağlam' role='popup menu' /&gt;&lt;ctrl automationid='31068' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bağlam' role='popup menu' /&gt;&lt;ctrl automationid='31068' role='menu item' check:text='Aç' /&gt;" Guid="2457a162-9c89-43f8-891f-c96b45a86e76" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAU8AAAAaCAYAAAA3+d4CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEcSURBVHhe7dmxrYMwGIVRpmIfb+Nh2IVVIhbwCwQQKC5eXMCPdIqjSJgi1acLdNM0FQB+I54ADfZ4vl6vSx3/BMDTiCdAA/EEaCCeAA3EE6CBeAI0iBfPMZe+60r3lobKOUAA4eI55n4J56zPY/UegLsFi+dYcv8OZ59KWn5zGav3AdwrVjzXR/Z5cX4WaF/y+H1umQJ3CxXPUzCHdA7kFk5rFAggUDzXR/bDslyssdzehVqbQARx4vm1LLeYfpboFk9f4IEIwsSztixP1zy2A4GEiedxZe7X1/eeezB9MAKCCPXB6F+2gKahfg5wgefFc7Ys0lSG2hnABR4XT1/dgQieuTwBbiaeAA3EE6CBeAI0EE+ABuIJ8LOp/AHwE8Ztg1lmogAAAABJRU5ErkJggg==" InformativeScreenshot="e85f53332ae0c5d33c8738fc74df0104.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMISURBVFhH7ZbtS1NhGMb3X/QvWCkEZmofDHHzpblp29SlEREREUGf+hj0KQoioqgvEQX+CbVsa77uzZfpcZupZZaJ8zQT5gzUc/Scq/s5PnLKHWFO2Ze84AcPz/1c13VzPh3TkY60o7nXJoFAjqSJU9x6ONpVkAuHu8TsSxP2w5LPDMw/Br7f2z8LzwVeq2vyqQm5MPPqGFJeKzD3APh8Kz9m7oDX6sLsXeTMl9sUdPNA8FpdmL6BQsJrdWHqOgoJr9WFqWs0KBy8Vhcmr6KQ8FpdmLxCg8LBa3Xh02XsRp3QUfZD4l+vUTav1YWJS9hBTXRAiXdgM9YOebwdG8JFbIztD4k8zMsytiiLZf7dwWt1YaKdBu1UzIxurI+2YXWoBemwC8tBJ34FnFgKOHKCvWWedMSlZaxRFstk2Uhs9/BaXUi4ocbd2BpvxVq0BSsRJzp7fXB2/jgQLGMl7NAyNylbjbfREm6jBWgYa4EsuPB7yIFUnx22N3M4+2L2QLCMVL9dy5THXFCoA/FWgwXiLlrASY8cyESakOy2Ggbmg9jTqGVKow5awEkLuAwWiDmgjl+APNqMTNiGpL/BMCwfxO7zyIRskKLNUKiDdfFaXYg10wJNtICdHluR/FhnGJYPYne9lilF7VCEJlqg2WCBcTtUwQY5Sp8r2EAL1JL5axaznhrMdZkx77VgwbcNO7O7bzQz8oj+Wi1TGmmkBWxgXbxWFwQr1DEr5BH6XME6JOmHo/LZdBYL3hos99ViNVSPtcFt2Jnd7eUR/WZkAnWQhhugUAfr4rW6MGaBGrVAHqLHA9VIfqhCxZNEFklvFdJ91ViP1GBzxKzBziv91RB95ww97J5lSoM1UKgDoxaDBYYroQ5VQg6XI9NbhqSnFGceCVksvi/FSk8ZNoLlUAYrNNiZecQuY49IHjaXQtse1sVrdSFSIqihEsiBYqz6T2DxbRHKHg5n8fNdETI0lwZOQgkVa7Az86Q8x409niJtvuNBuCT7n9BIp++HsBs+2lP5eI70P8tk+gMabT1X5bEGngAAAABJRU5ErkJggg==" InformativeScreenshot="cbe5d0260d8174dd3a8fe38914c94d6b.png" Selector="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Yeni Sekme - Google Chrome" sap:VirtualizedContainerService.HintSize="586,823" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="dc973fa0-089f-4aa8-a0a7-a45fa044f102" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,531" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Adres ve arama çubuğu'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="dc973fa0-089f-4aa8-a0a7-a45fa044f102" Text="sahibinden.com" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="182, 53, 1458, 24" ElementType="InputBox" FriendlyName="'Adres ve arama çubuğu'" FullSelectorArgument="&lt;ctrl name='Yeni Sekme - Google Chrome - Utku' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Adres ve arama çubuğu' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Yeni Sekme - Google Chrome - Utku' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Adres ve arama çubuğu' role='editable text' automationid='' /&gt;" Guid="7b6acb70-cfc5-4c68-92c1-36fef79520f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABbYAAAAcCAYAAAC9IOnOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAERSURBVHhe7dpRCcAwFATBSEkh/i2+0p9o6MIMrInj1n7OSJIkSZIkSZJUaQ0AAAAAAIQYtgEAAAAASLnD9nffBgAAAACAvzNsAwAAAACQYtgGAAAAACDFsA0AAAAAQIphGwAAAACAFMM2AAAAAAAphm0AAAAAAFIM2wAAAAAApBi2AQAAAABIMWwDAAAAAJBi2AYAAAAAIMWwDQAAAABAimEbAAAAAIAUwzYAAAAAACmGbQAAAAAAUgzbAAAAAACkGLYBAAAAAEgxbAMAAAAAkGLYBgAAAAAg5Q7bAAAAAABQYNgGAAAAACDFsA0AAAAAQIphGwAAAACAFMM2AAAAAAApaz9nJEmSJEmSJElqdOYFasFyiqD4NUsAAAAASUVORK5CYII=" InformativeScreenshot="34a2d952704d737bb70a16d9fbc4b0b5.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Yeni Sekme - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="SameAsCard" ScopeIdentifier="dc973fa0-089f-4aa8-a0a7-a45fa044f102" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files\Google\Chrome\Application\chrome.exe" IconBase64="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" InformativeScreenshot="17a30301abd540f8e5bb779b982dc114.png" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Yeni Sekme - Google Chrome' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sahibinden Satılık, Kiralık, Emlak, Oto, Alışveriş Ürünleri" sap:VirtualizedContainerService.HintSize="586,1142" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="4e61e2c7-764c-45e3-83cf-f5a493e026f7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,925" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT searchText'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4e61e2c7-764c-45e3-83cf-f5a493e026f7" Text="anadol" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/" DesignTimeRectangle="671, 127, 290, 36" ElementType="InputBox" FriendlyName="'INPUT searchText'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ui-autocomplete-input' aaname='Kelime, ilan no veya mağaza adı ile ara' /&gt;" Guid="19b26a1e-5163-4697-8445-65fd0923bfb4" ImageBase64="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" InformativeScreenshot="75cca2c2dab6d84a93a0b196ba133898.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sahibinden Satılık, Kiralık, Emlak, Oto, Alışveriş Ürünleri' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="4e61e2c7-764c-45e3-83cf-f5a493e026f7" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'Otomobil (12)'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4e61e2c7-764c-45e3-83cf-f5a493e026f7" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/kelime-ile-arama?query_text=anadol" DesignTimeRectangle="640, 467, 68, 12" ElementType="Text" FriendlyName="'Otomobil (12)'" FullSelectorArgument="&lt;webctrl aaname='                                             Otomobil (12)      *' parentid='wideContainer' tag='A' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname='                                             Otomobil (12)      *' parentid='wideContainer' tag='A' type='' class='' check:innerText='Otomobil (12)' /&gt;" Guid="0f709922-3c1f-42ad-bd55-0cfbd7aa7ef0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAQCAYAAAC1MDndAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALMSURBVFhH7ZaxayJBFMb9LyxTpkyR4rCyO5uDwDVyld0GxCoEDgs5EA6bgFhIMAQWDkWLiLAgaxFYCSweEhC0OCGIcCArWCiCKFp892Z2NLsXs7uGuyuO/WBl3sxjdt7P995sAL4c5QNykQ/IRT4gF9kADXUF0fcFBE4LOIrVUB4uxMo/0uQBZ4kHGMJ8Vh+ZUwUtNnzVh2kCvarTL9Mas4GOYuYScodPmFr0UEzFIUkS4qkiejzECZqyunfPHaBlV8G7hIbOfMPtaV9DNFyBOucmWlcFZLrm+K/JMXghBx+jmkZaFSuTNqpqB2pOQt4CyGgWcf9zTaM1BsUkLisDsVDF1U2PZu0SgOZQkzKuh6a11bRRQfhuBBA8llX8uerztaFWQyRMdugW0dITlnzWBHle0hCjTAx+qqM1H0P9IiMYkpHtrkyn1ROuE7cIikxV6RVcPPh7lOVvOKK146QO80geMmjdRi5ZgQh3p07eDsiqtZ6DRFCEBT2Xxv1MmEICkOUAVjEwAogtg0YaIh/Jn2fXCDIFmzXduF+Ar23woyQjIikojzZY6ndirxW0rwVEFZPK9FHBycV3TJnBgg+VIPfZxvSnkd+5xsYeAPVuIO0h8TogA2qayk+cm8moJpFp2gm9CdBUE5klZCglnClm5TO/z498yOd3fru9hsh+qEETyeQU/FKv4URmOeQBUCd/ACDqVbkU8m07DENNIbUtUSFLiT1nwVbWAA8BtPWzzr8FEHvPmTKm0Z/MoAXNEZzOywvIIYNYk64jHGvw0mDa16RjDV4IriXmDMilxAieOmFnGKOcoL7F9/UAyGMPmjUziOfaL5qxSw8yNX2s767549+u+WW3YTZlUXJOTdoZEMmpSV80ILOmTmsRahDmvh4AkWy3mKEiRVc5u875IygxYLs5y7zLLfa/yPoddIg8fAf52i8fkIt8QI4CfgFaxMtKs6Wn0AAAAABJRU5ErkJggg==" InformativeScreenshot="637c76b58380464261db4971aa58275d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kelime ile Arama' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Marka' ReferenceIdx='1' Name='Marka'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Seri' ReferenceIdx='2' Name='Seri'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Model' ReferenceIdx='3' Name='Model'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Başlığı' ReferenceIdx='4' Name='İlan Başlığı'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Yıl' ReferenceIdx='5' Name='Yıl'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KM' ReferenceIdx='6' Name='KM'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Renk' ReferenceIdx='7' Name='Renk'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Fiyat' ReferenceIdx='8' Name='Fiyat'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Tarihi' ReferenceIdx='9' Name='İlan Tarihi'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İl / İlçe' ReferenceIdx='10' Name='İl / İlçe'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-11' ReferenceIdx='11' Name='Column-11' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Marka' attr='text' /&gt;&lt;column name='Seri' attr='text' /&gt;&lt;column name='Model' attr='text' /&gt;&lt;column name='İlan Başlığı' attr='text' /&gt;&lt;column name='Yıl' attr='text' /&gt;&lt;column name='KM' attr='text' /&gt;&lt;column name='Renk' attr='text' /&gt;&lt;column name='Fiyat' attr='text' /&gt;&lt;column name='İlan Tarihi' attr='text' /&gt;&lt;column name='İl / İlçe' attr='text' /&gt;&lt;column name='Column-11' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="4e61e2c7-764c-45e3-83cf-f5a493e026f7" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="593, 360, 934, 1327" FriendlyName="'Marka Seri'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="b05f0930-d0a9-48bc-b55d-a8150b8aa941" InformativeScreenshot="083e9c3b0dfddbbe4fab0088f07d1419.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anadol Fiyatları &amp;amp; Modelleri sahibinden.com&amp;apos;da' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVDhPzZLPK8NhHMffY1v23Y0DRaO42PgTZNHKSeJA4WC1VvJ3uEgOak6Ui+Li4CSuXGhCIaIpKWO2pNj8ePs8nq3vnn13c3F41ef77v19P5/P53nAHPgX/mHAxxO4tAAORMBQEOzuAkeGwK0N01fCDMiC0UkRAbY0g/EoODEG+v1aW5wr8xYxAt7SoNutzdubtq5O72gHe3tsrYQZ8AB6vTqgPwzu78pIGfOHShw7SMj8vjodorAsMCwnz8+CL3emV+EIUGRS4NoKOBMHg512WEjqdxmz3GsEvN6Dl0nw5kS+ZaElfX3VDtnbsXWFEXB2oE0eD3h9bOvnRV1xcWjrCscI46Pa2FAPxqbA6RjY1Ki14UHTq3AEfD6Dywn9kNoCNWwNuBjp08styCOr9DsCvmX27K1bRrB4dSQkLaZOfbKfWsNXwtmB3Hs+7WLh0fVbq3eQl1ppX9Jdpb9qB4pqWqXOHPgDQVWVpP7UdckAAAAASUVORK5CYII=" InformativeScreenshot="fba761ff61c82e1c2d10a2c6639fa9a4.png" Selector="&lt;html app='chrome.exe' title='Sahibinden Satılık, Kiralık, Emlak, Oto, Alışveriş Ürünleri' /&gt;" Url="https://www.sahibinden.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="586,702" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,616" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,524" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="tableFromWeb.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,252" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sayfa1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="586,468" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="c622c20b-4499-4c6e-b865-855ce439a655" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable2]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Model' ReferenceIdx='1' Name='Model' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Başlığı' ReferenceIdx='2' Name='İlan Başlığı'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Yıl' ReferenceIdx='3' Name='Yıl'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KM' ReferenceIdx='4' Name='KM'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Renk' ReferenceIdx='5' Name='Renk'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Fiyat' ReferenceIdx='6' Name='Fiyat'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Tarihi' ReferenceIdx='7' Name='İlan Tarihi'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İl / İlçe' ReferenceIdx='8' Name='İl / İlçe'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9' ReferenceIdx='9' Name='Column-9' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='İlan Başlığı' attr='text' /&gt;&lt;column name='Yıl' attr='text' /&gt;&lt;column name='KM' attr='text' /&gt;&lt;column name='Renk' attr='text' /&gt;&lt;column name='Fiyat' attr='text' /&gt;&lt;column name='İlan Tarihi' attr='text' /&gt;&lt;column name='İl / İlçe' attr='text' /&gt;&lt;column name='Column-8' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/arazi-suv-pickup-cupra-formentor-1.5-tsi?query_text_mf=cupra&amp;query_text=cupra" DesignTimeRectangle="1231, 486, 84, 30" ElementType="Text" FriendlyName="'Sonraki'" FullSelectorArgument="&lt;webctrl aaname='Sonraki ' parentid='searchResultsSearchForm' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sonraki ' parentid='searchResultsSearchForm' tag='A' type='' class='prevNextBut' check:innerText='Sonraki' /&gt;" Guid="e66f73ba-96d7-4cf2-aac6-adbf82f77281" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAiCAYAAADbLB6TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALKSURBVGhD7Zq/ayJBGIb9LyyvTHmFhVhtF5sD4ZqQyvIaQbjmSHWV2AhCmrAQEIRFC0FYOJIiIAhyKQRBkCwcuBCRHFgIQtwFizffNztr/JW7884hbG4eGHB2dNh55tt3F9kYNErRghWzFLxYLDAajTAcDnX7h8YO2WXIUjAPzOdz2dP8LeyQXYYsBbN9zWFYdakFK0ALVowWrBgtWDFasGK0YMVowYpRLthz28hnTcQSJo5yNpruoxx5Bfo2nYeN77K7yYNtIZZr40H2D4FawbMePqUqKHZnouuNByiXbg+6gL34jWAVqBX8Cgv6JW9OsKhgE+nzAaby0Br+PWqFKt5RfHCEpAtt3PlyDBPUciYytoueZeGI5okZFi6cMGLC8QGuxByhuEfc2U2kj8M5b+GK48SGYK//DcZpA1fjoB+9iCA8t4WsYSJ+bKHcncijzARNFmS5Uv5MiIznOnKBgcA4RcyXTvA7t1ElARvjRh0VJ4ggwaSHC9oUMSdtcJ42ptgXI+uCx22c0IbVpFwmkoIDJmhVLFGpxrkDjw+ReCPRRGtZsYTfRz5RlYsOBBrWvRgSsKClgLCCf4reboLvbAleyn3+K5GJsOAAz71BJnGJskOdnXnooEibEAgJBa5U/U7Bq1cFw5tZhyEjgtu64DqyZ/RE87W3FVuRF0zXJSr0yCYWTFWU+YMK3k+wj1bBxPuzDmU5V+cLFez/QJnOI1lavzdET3D/BvmGA1csdoFp10YyFUrdzuBWqbKVwfsJnoo5DZqT8caUwR9MZK+lxlAwf/bpajllyTKyiAhW8Cy4o9NNji/V5Geb7tgrubf6FJG6fOEpYh/BHENtZDkeaL6TygC967qYv8xVvCqYYckfnyW/gYj4/9CCFaMFK0YLVowWrBgtWDFasGK0YMXsFKxfnToML746pV/+O0xjhztf/tOoQQtWCvAEGElB55zv9YMAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1.5 TSI &amp;gt; Arama Sonucu - sahibinden.com' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="601, -1659, 934, 2067" FriendlyName="'İlan Başlığı Yıl'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="96623f94-2027-49aa-afb3-aa9b31352e98" InformativeScreenshot="20f4c6ac37565b508e5363ada9012a90.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1.5 TSI &amp;gt; Arama Sonucu - sahibinden.com' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVDhPzZLPK8NhHMffY1v23Y0DRaO42PgTZNHKSeJA4WC1VvJ3uEgOak6Ui+Li4CSuXGhCIaIpKWO2pNj8ePs8nq3vnn13c3F41ef77v19P5/P53nAHPgX/mHAxxO4tAAORMBQEOzuAkeGwK0N01fCDMiC0UkRAbY0g/EoODEG+v1aW5wr8xYxAt7SoNutzdubtq5O72gHe3tsrYQZ8AB6vTqgPwzu78pIGfOHShw7SMj8vjodorAsMCwnz8+CL3emV+EIUGRS4NoKOBMHg512WEjqdxmz3GsEvN6Dl0nw5kS+ZaElfX3VDtnbsXWFEXB2oE0eD3h9bOvnRV1xcWjrCscI46Pa2FAPxqbA6RjY1Ki14UHTq3AEfD6Dywn9kNoCNWwNuBjp08styCOr9DsCvmX27K1bRrB4dSQkLaZOfbKfWsNXwtmB3Hs+7WLh0fVbq3eQl1ppX9Jdpb9qB4pqWqXOHPgDQVWVpP7UdckAAAAASUVORK5CYII=" InformativeScreenshot="f96c11170659a3df841d7af706791fe7.png" Selector="&lt;html app='chrome.exe' title='Arazi, SUV &amp;amp; Pickup &amp;gt; Arama Sonucu - sahibinden.com' /&gt;" Url="https://www.sahibinden.com/arazi-suv-pickup-cupra-formentor-1.5-tsi?query_text_mf=cupra&amp;query_text=cupra" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="586,636" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,524" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="tableFromWeb2.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel2" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,252" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:WriteRangeX Destination="[Excel2.Sheet(&quot;Sayfa1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[ExtractDataTable2]" />
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </ueab:SequenceX>
+  </Sequence>
+</Activity>
